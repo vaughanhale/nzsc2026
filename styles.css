@@ -109,23 +109,18 @@ img {
     margin-right: auto;
 }
 
-.cta-button {
+.email-link {
     display: inline-block;
-    background: var(--green-mid);
-    color: var(--white);
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
+    color: var(--green-dark);
     font-weight: 600;
     font-size: 1.1rem;
-    margin-top: 1.5rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
-.cta-button:hover {
-    background: var(--green-dark);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+.email-link:hover {
+    color: var(--green-mid);
 }
 
 .hero-image {
