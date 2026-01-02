@@ -58,8 +58,7 @@ img {
    =================== */
 .hero {
     background: linear-gradient(135deg, var(--teal-light) 0%, var(--yellow-light) 50%, var(--cream) 100%);
-    padding: 2rem 1.5rem 3rem;
-    min-height: 100vh;
+    padding: 3rem 1.5rem 4rem;
     display: flex;
     align-items: center;
 }
