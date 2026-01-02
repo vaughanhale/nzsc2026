@@ -76,9 +76,10 @@ img {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 1rem;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 .hero h1 {
@@ -123,6 +124,13 @@ img {
     color: var(--green-mid);
 }
 
+.signoff {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 1.5rem !important;
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
@@ -151,7 +159,8 @@ img {
     }
 
     .logo {
-        margin: 0 0 1.5rem;
+        width: 60px;
+        height: 60px;
     }
 
     .hero h1 {
@@ -352,22 +361,6 @@ img {
 
 .venue-card.highlight::before {
     display: none;
-}
-
-/* ===================
-   FOOTER
-   =================== */
-footer {
-    background: var(--green-dark);
-    color: var(--white);
-    text-align: center;
-    padding: 1.5rem;
-}
-
-footer p {
-    font-size: 0.95rem;
-    opacity: 0.9;
-    margin: 0;
 }
 
 /* ===================
