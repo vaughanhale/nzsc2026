@@ -363,47 +363,16 @@ img {
    FOOTER
    =================== */
 footer {
-    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+    background: var(--green-dark);
     color: var(--white);
     text-align: center;
-    padding: 4rem 1.5rem;
-}
-
-footer h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 footer p {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     opacity: 0.9;
-    max-width: 450px;
-    margin: 0 auto 1.5rem;
-}
-
-.email-button {
-    display: inline-block;
-    background: var(--yellow);
-    color: var(--green-dark);
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.15rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
-}
-
-.email-button:hover {
-    background: var(--white);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
-}
-
-.signoff {
-    margin-top: 2rem;
-    font-size: 1rem;
-    opacity: 0.85;
+    margin: 0;
 }
 
 /* ===================
