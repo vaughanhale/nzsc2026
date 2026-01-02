@@ -1,0 +1,384 @@
+/* Wellington Recommendations - NZ Special Convention 2026 */
+/* Mobile-first responsive design */
+
+:root {
+    --color-green-dark: #35740f;
+    --color-green-light: #4a9c15;
+    --color-teal: #aad1d2;
+    --color-teal-light: #d4e8e9;
+    --color-yellow: #ffd38b;
+    --color-yellow-light: #fff4e0;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-bg: #fafafa;
+    --color-white: #fff;
+    --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --container-max: 900px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-green-dark);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--color-green-light);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--color-green-light);
+    outline-offset: 2px;
+}
+
+/* Header / Hero */
+.hero {
+    background: linear-gradient(135deg, var(--color-teal-light) 0%, var(--color-yellow-light) 100%);
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--color-green-dark);
+    margin: 0 0 var(--spacing-xs);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-md);
+}
+
+.family-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: var(--spacing-md);
+}
+
+.intro {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.intro:last-child {
+    margin-bottom: 0;
+}
+
+/* Category Navigation */
+.category-nav {
+    background: var(--color-green-dark);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.category-nav .container {
+    display: flex;
+    gap: var(--spacing-xs);
+    padding: 0 var(--spacing-sm);
+    white-space: nowrap;
+}
+
+.category-nav a {
+    color: var(--color-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.category-nav a:hover,
+.category-nav a:focus {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* Category Sections */
+.category {
+    padding: var(--spacing-xl) 0;
+}
+
+.category:nth-child(even) {
+    background: var(--color-white);
+}
+
+.category h2 {
+    font-size: 1.75rem;
+    color: var(--color-green-dark);
+    margin: 0 0 var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 3px solid var(--color-teal);
+}
+
+/* Venue Cards */
+.venues {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.venue {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--color-teal);
+}
+
+.category:nth-child(even) .venue {
+    background: var(--color-bg);
+}
+
+.venue h3 {
+    font-size: 1.25rem;
+    color: var(--color-green-dark);
+    margin: 0 0 var(--spacing-xs);
+}
+
+.venue .address {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin: 0 0 var(--spacing-sm);
+}
+
+.travel-note {
+    color: var(--color-green-light);
+    font-style: italic;
+}
+
+.venue .description {
+    margin: 0 0 var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.venue a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.venue.highlight {
+    background: linear-gradient(135deg, var(--color-yellow-light) 0%, var(--color-teal-light) 100%);
+    border-left-color: var(--color-yellow);
+}
+
+.venue.highlight h3 {
+    color: var(--color-green-dark);
+}
+
+/* Footer */
+footer {
+    background: var(--color-green-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+footer h2 {
+    font-size: 1.75rem;
+    margin: 0 0 var(--spacing-sm);
+    color: var(--color-white);
+}
+
+footer p {
+    max-width: 500px;
+    margin: 0 auto var(--spacing-md);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.email-button {
+    display: inline-block;
+    background: var(--color-yellow);
+    color: var(--color-green-dark);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.email-button:hover,
+.email-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: var(--color-green-dark);
+}
+
+.signoff {
+    font-size: 1rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    background: var(--color-green-dark);
+    color: var(--color-white);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: var(--color-green-light);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* Tablet and up */
+@media (min-width: 600px) {
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category h2 {
+        font-size: 2rem;
+    }
+
+    .venues {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .venue {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    .category-nav .container {
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+
+    .category-nav a {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    .category-nav,
+    .back-to-top {
+        display: none;
+    }
+
+    .hero {
+        background: none;
+        padding: var(--spacing-md) 0;
+    }
+
+    .venue {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    footer {
+        background: none;
+        color: var(--color-text);
+    }
+
+    footer h2,
+    .email-button {
+        color: var(--color-text);
+    }
+}
