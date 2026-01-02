@@ -5,225 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellington Recommendations | NZ Special Convention 2026</title>
     <meta name="description" content="Our favourite Wellington spots - shared with love from Vaughan, Deepti & Indie Hale">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
     <header class="hero">
-        <div class="container">
-            <img src="assets/logo.svg" alt="Kiwi bird logo" class="logo">
-            <h1>Hello!</h1>
-            <p class="subtitle">We're so happy to have met you at the NZ Special Convention 2026!</p>
-            <img src="assets/family-photo.png" alt="Vaughan, Deepti and Indie the dog" class="family-photo">
-            <p class="intro">We are <strong>Vaughan and Deepti Hale</strong> from the Wellington City Congregation (also pictured is our beloved Indie).</p>
-            <p class="intro">If you've got spare time in your travels (or you want to plan your next trip to NZ), here are some of our favourite things to do in Wellington. Or better yet, get in contact with us and we can do it together!</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <img src="assets/logo.svg" alt="" class="logo">
+                <h1>Kia ora!</h1>
+                <p class="subtitle">We're so happy to have met you at the<br><strong>NZ Special Convention 2026</strong></p>
+                <p class="intro">We're <strong>Vaughan & Deepti Hale</strong> from Wellington City Congregation, and this is our beloved Indie.</p>
+                <p class="intro">Here are our favourite Wellington spots. Or better yet - get in touch and explore with us!</p>
+                <a href="#contact" class="cta-button">Get in touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/family-photo.png" alt="Vaughan, Deepti and Indie the dog">
+            </div>
         </div>
     </header>
 
     <nav class="category-nav">
-        <div class="container">
-            <a href="#coffee">Coffee</a>
-            <a href="#cafes">Cafes</a>
-            <a href="#chocolate">Chocolate</a>
-            <a href="#icecream">Ice Cream</a>
-            <a href="#beer">Craft Beer</a>
-            <a href="#gin">Gin</a>
-            <a href="#wine">Wine</a>
-            <a href="#restaurants">Restaurants</a>
-            <a href="#views">Views</a>
-            <a href="#mustdos">Must-Dos</a>
-        </div>
+        <a href="#food">Food & Coffee</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#dining">Restaurants</a>
+        <a href="#explore">Explore</a>
     </nav>
 
     <main>
-        <section id="coffee" class="category">
+        <section id="food" class="category">
             <div class="container">
-                <h2>Coffee</h2>
-                <div class="venues">
-                    <article class="venue">
+                <h2>Food & Coffee</h2>
+                <div class="venues-grid">
+                    <a href="https://raglanroast.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">☕</span>
                         <h3>Raglan Roast</h3>
-                        <p class="address">40 Abel Smith St, Te Aro</p>
-                        <p class="description">Beloved local roaster in a converted garage with second-hand couches and art-covered walls. Students, professionals, and creatives all mingle over some of the best (and cheapest!) coffee in Wellington.</p>
-                        <a href="https://raglanroast.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="cafes" class="category">
-            <div class="container">
-                <h2>Cafes</h2>
-                <div class="venues">
-                    <article class="venue">
+                        <p class="venue-location">40 Abel Smith St</p>
+                        <p class="venue-desc">Best (and cheapest!) coffee in Wellington. Converted garage with art-covered walls and cozy couches.</p>
+                    </a>
+                    <a href="https://floriditas.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🥐</span>
                         <h3>Floriditas</h3>
-                        <p class="address">161 Cuba St, Te Aro</p>
-                        <p class="description">A Wellington institution since 2005. Step into this 1930s-style grand cafe for seasonal European-New Zealand cuisine, famous baking, and an excellent NZ wine list.</p>
-                        <a href="https://floriditas.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
+                        <p class="venue-location">161 Cuba St</p>
+                        <p class="venue-desc">Wellington institution since 2005. 1930s grand cafe with famous baking and excellent wine list.</p>
+                    </a>
+                    <a href="https://www.pickleandpie.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🥪</span>
                         <h3>Pickle & Pie</h3>
-                        <p class="address">2 Lombard St, Te Aro</p>
-                        <p class="description">Wellington's take on a NYC deli. House-made pickles, pastrami sandwiches, lox, matzo ball soup, and sweet pies. The pickle jars lining the back wall are available to take home.</p>
-                        <a href="https://www.pickleandpie.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
+                        <p class="venue-location">2 Lombard St</p>
+                        <p class="venue-desc">NYC-style deli. Pastrami, lox, matzo ball soup, and house-made pickles to take home.</p>
+                    </a>
+                    <a href="https://www.bestugly.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🥯</span>
                         <h3>Best Ugly Bagels</h3>
-                        <p class="address">5 Swan Lane, Te Aro</p>
-                        <p class="description">Wood-fired Montreal-style bagels baked fresh on site. Inspired by Saint Viateur in Montreal, these handmade bagels have a unique aroma from the wood-fired oven.</p>
-                        <a href="https://www.bestugly.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="chocolate" class="category">
-            <div class="container">
-                <h2>Chocolate</h2>
-                <div class="venues">
-                    <article class="venue">
+                        <p class="venue-location">5 Swan Lane</p>
+                        <p class="venue-desc">Wood-fired Montreal-style bagels baked fresh. Inspired by Saint Viateur, Montreal.</p>
+                    </a>
+                    <a href="https://wcf.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍫</span>
                         <h3>Wellington Chocolate Factory</h3>
-                        <p class="address">5 Eva St, Te Aro</p>
-                        <p class="description">Award-winning bean-to-bar chocolate made on site since 2013. Watch the making process, enjoy a delicious hot chocolate, or take a tour and make your own bar with custom toppings.</p>
-                        <a href="https://wcf.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="icecream" class="category">
-            <div class="container">
-                <h2>Ice Cream</h2>
-                <div class="venues">
-                    <article class="venue">
+                        <p class="venue-location">5 Eva St</p>
+                        <p class="venue-desc">Award-winning bean-to-bar chocolate. Watch them make it, or make your own bar!</p>
+                    </a>
+                    <a href="https://www.duckislandicecream.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍦</span>
                         <h3>Duck Island</h3>
-                        <p class="address">168 Cuba St, Te Aro</p>
-                        <p class="description">24 creative flavours daily in a charming pastel pink space. Try fairy bread, roasted white chocolate and miso, or peppermint slice. Vegan options available too.</p>
-                        <a href="https://www.duckislandicecream.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
+                        <p class="venue-location">168 Cuba St</p>
+                        <p class="venue-desc">24 creative flavours in a charming pastel pink space. Try fairy bread or miso white chocolate!</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="beer" class="category">
+        <section id="drinks" class="category alt">
             <div class="container">
-                <h2>Craft Beer</h2>
-                <div class="venues">
-                    <article class="venue">
+                <h2>Drinks</h2>
+                <div class="venues-grid">
+                    <a href="https://garageproject.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍺</span>
                         <h3>Garage Project</h3>
-                        <p class="address">68 Aro St, Aro Valley (Taproom at 91 Aro St)</p>
-                        <p class="description">New Zealand's most innovative brewery, born in a converted petrol station in 2011. Over 640 different beers created. Visit the taproom across the road or the cellar door at the original site.</p>
-                        <a href="https://garageproject.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
-                        <h3>Double Vision Brewing</h3>
-                        <p class="address">128A Park Rd, Miramar <span class="travel-note">(15 min from CBD)</span></p>
-                        <p class="description">Award-winning small brewery with playful, boundary-pushing brews. Try Captain Colada (pina colada sour) or Mouth Party (hazy pale ale). "Beer is about friends, family, and fun."</p>
-                        <a href="https://doublevisionbrewing.com/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="gin" class="category">
-            <div class="container">
-                <h2>Gin</h2>
-                <div class="venues">
-                    <article class="venue">
+                        <p class="venue-location">68 Aro St</p>
+                        <p class="venue-desc">NZ's most innovative brewery. Born in a petrol station, now 640+ beers created. Taproom across the road.</p>
+                    </a>
+                    <a href="https://doublevisionbrewing.com/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍻</span>
+                        <h3>Double Vision</h3>
+                        <p class="venue-location">Miramar <span class="travel-time">15 min</span></p>
+                        <p class="venue-desc">Award-winning small brewery. Try Captain Colada sour or Mouth Party hazy pale ale.</p>
+                    </a>
+                    <a href="https://www.southwarddistilling.com/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍸</span>
                         <h3>Southward Distilling</h3>
-                        <p class="address">35/70 Kingsford Smith St, Lyall Bay</p>
-                        <p class="description">Small batch gin and whisky with bold NZ-inspired flavours. Try Mountain Gin (juniper, citrus, rosemary, lavender) or blend your own botanicals at their tasting room.</p>
-                        <a href="https://www.southwarddistilling.com/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
+                        <p class="venue-location">Lyall Bay</p>
+                        <p class="venue-desc">Small batch gin & whisky. Try Mountain Gin or blend your own botanicals at their tasting room.</p>
+                    </a>
+                    <a href="https://www.poppiesmartinborough.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍷</span>
+                        <h3>Poppies</h3>
+                        <p class="venue-location">Martinborough <span class="travel-time">1 hr</span></p>
+                        <p class="venue-desc">Award-winning family winery. Traditional winemaking, cellar door open daily. Tastings $15.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="wine" class="category">
-            <div class="container">
-                <h2>Wine</h2>
-                <div class="venues">
-                    <article class="venue">
-                        <h3>Poppies Martinborough</h3>
-                        <p class="address">Martinborough <span class="travel-note">(1 hour from Wellington)</span></p>
-                        <p class="description">Award-winning family winery run by Shayne and Poppy Hammond. Traditional winemaking with a deep respect for the past. Cellar door open daily - tastings $15, refundable with purchase.</p>
-                        <a href="https://www.poppiesmartinborough.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="restaurants" class="category">
+        <section id="dining" class="category">
             <div class="container">
                 <h2>Restaurants</h2>
-                <div class="venues">
-                    <article class="venue">
+                <div class="venues-grid">
+                    <a href="https://chaatstreet.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🍛</span>
                         <h3>Chaat Street</h3>
-                        <p class="address">171 Willis St, Te Aro</p>
-                        <p class="description">Indian street food tapas that started as a wildly popular pop-up. Bite-sized chaats packed with flavour and spice, plus creative cocktails like chilli margaritas.</p>
-                        <a href="https://chaatstreet.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
+                        <p class="venue-location">171 Willis St</p>
+                        <p class="venue-desc">Indian street food tapas. Bite-sized chaats packed with flavour, plus chilli margaritas.</p>
+                    </a>
+                    <a href="https://kisarestaurant.co.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🥙</span>
                         <h3>Kisa</h3>
-                        <p class="address">195 Cuba St, Te Aro</p>
-                        <p class="description">Bold Turkish flavours in a 90-seat space centred around NZ's only Josper charcoal BBQ. House-baked pita, mezze platters, and excellent local wine and craft beer.</p>
-                        <a href="https://kisarestaurant.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
+                        <p class="venue-location">195 Cuba St</p>
+                        <p class="venue-desc">Bold Turkish flavours with NZ's only Josper charcoal BBQ. House-baked pita and mezze.</p>
+                    </a>
+                    <a href="https://www.rosellawinebar.nz/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🌊</span>
                         <h3>Rosella</h3>
-                        <p class="address">18 Marjoribanks St, Mt Victoria</p>
-                        <p class="description">Mediterranean wine bar in an 1886 heritage building. Flavours from across Europe, North Africa, and the Middle East. Relaxed neighbourhood vibe with excellent seafood.</p>
-                        <a href="https://www.rosellawinebar.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
+                        <p class="venue-location">18 Marjoribanks St</p>
+                        <p class="venue-desc">Mediterranean wine bar in an 1886 heritage building. Excellent seafood and relaxed vibes.</p>
+                    </a>
+                    <a href="https://rita.co.nz/" target="_blank" rel="noopener" class="venue-card featured">
+                        <span class="venue-icon">⭐</span>
                         <h3>Rita</h3>
-                        <p class="address">89 Aro St, Aro Valley</p>
-                        <p class="description">Intimate 30-seat restaurant in a 100-year-old cottage. Three-course set menu, two sittings per night. Food critic Jesse Mulligan called it his favourite restaurant in the country. Book ahead!</p>
-                        <a href="https://rita.co.nz/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
+                        <p class="venue-location">89 Aro St</p>
+                        <p class="venue-desc">Jesse Mulligan's favourite restaurant in NZ. Intimate 30-seat cottage, set menu. Book ahead!</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="views" class="category">
+        <section id="explore" class="category alt">
             <div class="container">
-                <h2>Best Wellington Views</h2>
-                <div class="venues">
-                    <article class="venue">
+                <h2>Explore Wellington</h2>
+                <div class="venues-grid">
+                    <a href="https://www.visitzealandia.com/" target="_blank" rel="noopener" class="venue-card featured">
+                        <span class="venue-icon">🥝</span>
+                        <h3>Zealandia</h3>
+                        <p class="venue-location">Karori <span class="travel-time">10 min</span></p>
+                        <p class="venue-desc">World's first ecosanctuary - TIME's 100 greatest places. See kiwi, tuatara, rare birds. Free shuttle!</p>
+                    </a>
+                    <a href="https://www.alltrails.com/trail/new-zealand/wellington/oriental-parade-path" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🏖️</span>
+                        <h3>Oriental Parade</h3>
+                        <p class="venue-location">Waterfront</p>
+                        <p class="venue-desc">Iconic waterfront promenade. Heritage Norfolk pines lit up at night, harbour views, closest beach to CBD.</p>
+                    </a>
+                    <a href="https://wellington.govt.nz/recreation/outdoors/walks-and-walkways/across-the-city/brooklyn-wind-turbine" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🌀</span>
                         <h3>Brooklyn Wind Turbine</h3>
-                        <p class="address">Top of Brooklyn Hill</p>
-                        <p class="description">NZ's first commercial wind turbine with panoramic views of Wellington Harbour and the South Coast. Walk up from Aro Valley (2 hours) or drive to the top. Information panels and historic WWII bunkers nearby.</p>
-                        <a href="https://wellington.govt.nz/recreation/outdoors/walks-and-walkways/across-the-city/brooklyn-wind-turbine" target="_blank" rel="noopener">Trail info</a>
-                    </article>
-                    <article class="venue">
-                        <h3>Te Ahumairangi Hill Lookout</h3>
-                        <p class="address">Orangi Kaupapa Rd, Northland</p>
-                        <p class="description">A hidden gem with views as spectacular as Mt Victoria but far fewer crowds. Car park and picnic area at the top. Former site of Wellington's shore-to-ship radio station.</p>
-                        <a href="https://explorewellington.nz/te-ahumairangi-hill-tinakori-hill/" target="_blank" rel="noopener">Learn more</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="mustdos" class="category">
-            <div class="container">
-                <h2>Must-Dos</h2>
-                <div class="venues">
-                    <article class="venue">
-                        <h3>Zealandia Te Mara a Tane</h3>
-                        <p class="address">End of Waiapu Rd, Karori <span class="travel-note">(10 min from CBD)</span></p>
-                        <p class="description">The world's first fully-fenced ecosanctuary - named by TIME as one of the 100 greatest places in the world. See kiwi, tuatara, and rare native birds. Free shuttle from downtown and the Cable Car.</p>
-                        <a href="https://www.visitzealandia.com/" target="_blank" rel="noopener">Visit website</a>
-                    </article>
-                    <article class="venue">
-                        <h3>Walk along Oriental Parade</h3>
-                        <p class="address">Oriental Bay waterfront</p>
-                        <p class="description">Wellington's iconic waterfront promenade. Stroll under heritage Norfolk pines (lit up at night), enjoy harbour views, and relax at the closest beach to the city centre.</p>
-                        <a href="https://www.alltrails.com/trail/new-zealand/wellington/oriental-parade-path" target="_blank" rel="noopener">Trail info</a>
-                    </article>
-                    <article class="venue highlight">
-                        <h3>Join us on a bush walk with Indie!</h3>
-                        <p class="description">Get in touch and we'd love to take you exploring Wellington's beautiful bush tracks. Indie is always keen for an adventure!</p>
-                    </article>
+                        <p class="venue-location">Brooklyn Hill</p>
+                        <p class="venue-desc">Panoramic harbour and coast views. Walk up from Aro Valley (2hr) or drive. WWII bunkers nearby.</p>
+                    </a>
+                    <a href="https://explorewellington.nz/te-ahumairangi-hill-tinakori-hill/" target="_blank" rel="noopener" class="venue-card">
+                        <span class="venue-icon">🏔️</span>
+                        <h3>Te Ahumairangi Lookout</h3>
+                        <p class="venue-location">Orangi Kaupapa Rd</p>
+                        <p class="venue-desc">Hidden gem with Mt Victoria views but fewer crowds. Car park and picnic area at top.</p>
+                    </a>
+                    <div class="venue-card highlight">
+                        <span class="venue-icon">🐕</span>
+                        <h3>Bush walk with Indie!</h3>
+                        <p class="venue-desc">Get in touch and we'd love to take you exploring Wellington's beautiful bush tracks together!</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -232,12 +185,10 @@
     <footer id="contact">
         <div class="container">
             <h2>Let's Connect!</h2>
-            <p>We'd love to hear from you. Whether you want recommendations, company on an adventure, or just to say hello:</p>
+            <p>We'd love to hear from you - recommendations, adventures, or just to say hello:</p>
             <a href="mailto:nzsc2026@hales.co.nz" class="email-button">nzsc2026@hales.co.nz</a>
             <p class="signoff">With love from Wellington,<br><strong>Vaughan, Deepti & Indie</strong></p>
         </div>
     </footer>
-
-    <a href="#" class="back-to-top" aria-label="Back to top">Top</a>
 </body>
 </html>
